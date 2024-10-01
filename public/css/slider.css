@@ -1,0 +1,84 @@
+/* Custom CSS For Slider */
+
+.tns-outer img {
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (min-width: 640px) {
+    .tns-outer img {
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tns-outer img {
+        height: 350px;
+    }
+}
+
+.tns-outer button[data-action="stop"],
+.tns-outer button[data-action="start"] {
+    display: none;
+}
+
+.tns-outer {
+    position: relative;
+}
+
+.tns-outer .tns-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tns-nav button {
+    border: none;
+    background: gray;
+    border-radius: 50%;
+    padding: 6px;
+    outline: none;
+    margin: 0 2px;
+}
+
+.tns-nav button:hover {
+    background: #444;
+}
+
+.h6,
+.w6 {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+}
+
+.tns-controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: calc(50% - 40px);
+    left: 0;
+    right: 0;
+    z-index: 50;
+    outline: none;
+    pointer-events: none;
+}
+
+.tns-controls button {
+    background: transparent;
+    outline: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    pointer-events: auto;
+}
